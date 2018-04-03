@@ -15,6 +15,8 @@ namespace Gerspective
         public Form1()
         {
             InitializeComponent();
+
+            InputParser.OpenData();
         }
     }
 }

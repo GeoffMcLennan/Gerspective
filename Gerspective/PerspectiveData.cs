@@ -8,8 +8,8 @@ namespace Gerspective
 {
     class PerspectiveData
     {
-        public double[,] XLeft;
-        public double[,] XRight;
-        public double[,] Lines;
+        public double[,] XLeft { get; set; }
+        public double[,] XRight { get; set; }
+        public int[,] Lines { get; set; }
     }
 }

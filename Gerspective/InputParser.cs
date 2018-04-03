@@ -35,12 +35,13 @@ namespace Gerspective
                         {
                             if (text == "")
                             {
-                                data = new double[input.Count, 3];
+                                data = new double[input.Count, 4];
                                 for (int i = 0; i < input.Count; i++)
                                 {
                                     data[i, 0] = input[i].Item1;
                                     data[i, 1] = input[i].Item2;
                                     data[i, 2] = input[i].Item3;
+                                    data[i, 3] = 1;
                                 }
                                 pd.XLeft = data;
                                 input = new List<Tuple<double, double, double>>();

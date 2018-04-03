@@ -44,14 +44,14 @@ namespace Gerspective {
                 }
 
                 // Draw right eye image
-                Pen pen = new Pen(Color.Cyan, 1);
+                Pen pen = new Pen(Color.Red, 1);
                 for (int i = 0; i < data.Lines.GetLength(0); i++) {
                     g.DrawLine(pen, (int)rScrnPts[data.Lines[i, 0], 0], (int)rScrnPts[data.Lines[i, 0], 1],
                         (int)rScrnPts[data.Lines[i, 1], 0], (int)rScrnPts[data.Lines[i, 1], 1]);
                 }
 
                 // Draw left eye image
-                pen.Color = Color.Red;
+                pen.Color = Color.Cyan;
                 for (int i = 0; i < data.Lines.GetLength(0); i++) {
                     g.DrawLine(pen, (int)lScrnPts[data.Lines[i, 0], 0], (int)lScrnPts[data.Lines[i, 0], 1],
                         (int)lScrnPts[data.Lines[i, 1], 0], (int)lScrnPts[data.Lines[i, 1], 1]);

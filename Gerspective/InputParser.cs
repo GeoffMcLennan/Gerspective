@@ -68,7 +68,7 @@ namespace Gerspective
 
             ofd = new OpenFileDialog();
             ofd.Filter = "Data Files|*.dat";
-            ofd.Title = "Open Points Data File";
+            ofd.Title = "Open Lines Data File";
 
             if (ofd.ShowDialog() == DialogResult.OK)
             {
